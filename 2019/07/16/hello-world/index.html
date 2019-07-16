@@ -23,8 +23,6 @@
 
 <link href="/blog/css/style.css?v=1" rel="stylesheet">
 
-<link href="/blog/css/hl_theme/atom-light.css?v=1" rel="stylesheet">
-
 <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -284,6 +282,17 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
@@ -340,6 +349,27 @@
     </p>
 </div>
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/blog/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'e9e5ab6d797d79c1a6a2',
+            clientSecret: 'a570aaf652f701538649e9c6d511c1cc3d5edee9',
+            repo: 'blog',
+            owner: 'qumoptly',
+            admin: ['qumoptly'],
+            id: location.pathname,
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
@@ -419,20 +449,6 @@
 
         /*高亮代码块行号*/
         
-        $('pre code').each(function(){
-            var lines = $(this).text().split('\n').length - 1, widther='';
-            if (lines>99) {
-                widther = 'widther'
-            }
-            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
-            $(this).addClass('has-numbering ' + widther)
-                    .parent()
-                    .append($numbering);
-            for(var i=1;i<=lines;i++){
-                $numbering.append($('<li/>').text(i));
-            }
-        });
-        
 
         /*访问数量*/
         
@@ -456,38 +472,6 @@
 </script>
 
 <!--加入行号的高亮代码块样式-->
-
-<style>
-    pre{
-        position: relative;
-        margin-bottom: 24px;
-        border-radius: 10px;
-        border: 1px solid #e2dede;
-        background: #FFF;
-        overflow: hidden;
-    }
-    code.has-numbering{
-        margin-left: 30px;
-    }
-    code.has-numbering.widther{
-        margin-left: 35px;
-    }
-    .pre-numbering{
-        margin: 0px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        padding: 0.5em 3px 0.7em 5px;
-        border-right: 1px solid #C3CCD0;
-        text-align: right;
-        color: #AAA;
-        background-color: #fafafa;
-    }
-    .pre-numbering.widther {
-        width: 35px;
-    }
-</style>
 
 <!--自定义样式设置-->
 <style>
