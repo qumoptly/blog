@@ -19,7 +19,7 @@
 <meta name="twitter:description" content="qumoptly&apos;s blog">
 
 
-<link rel="icon" href="/img/atom.png">
+<link rel="icon" href="/source/atom.png">
 
 <link href="/blog/css/style.css?v=1" rel="stylesheet">
 
@@ -55,7 +55,7 @@
 <aside class="nav mobile">
     <div class="nav-left">
         <a href="/blog/" class="avatar_target">
-    <img class="avatar" src="/blog/img/atom.png" />
+    <img class="avatar" src="/blog/source/atom.png" />
 </a>
 <div class="author">
     <span>qumoptly</span>
@@ -158,20 +158,12 @@
         
     
         
-        <a title="kugou" href="https://www.kugou.com/" target="_blank">
-            
-                <svg class="iconfont-svg" aria-hidden="true">
-                    <use xlink:href="#icon-kugou"></use>
-                </svg>
-            
-        </a>
-        
     
         
-        <a title="neteasemusic" href="https://music.163.com/" target="_blank">
+        <a title="music" href="https://music.163.com/" target="_blank">
             
                 <svg class="iconfont-svg" aria-hidden="true">
-                    <use xlink:href="#icon-neteasemusic"></use>
+                    <use xlink:href="#icon-music"></use>
                 </svg>
             
         </a>
@@ -270,14 +262,20 @@
     }
 </style>
 </div>
-            <h1 id="Hexo初步配置"><a href="#Hexo初步配置" class="headerlink" title="Hexo初步配置"></a>Hexo初步配置</h1><h2 id="3-hexo主题"><a href="#3-hexo主题" class="headerlink" title="3-hexo主题"></a>3-hexo主题</h2><h2 id="主题配置文件：-config-yml"><a href="#主题配置文件：-config-yml" class="headerlink" title="主题配置文件： _config.yml "></a>主题配置文件： _config.yml </h2><h3 id="自定义首页"><a href="#自定义首页" class="headerlink" title="自定义首页"></a>自定义首页</h3><p>位置： /layout/indexs.md </p>
+            <h1 id="Hexo初步配置"><a href="#Hexo初步配置" class="headerlink" title="Hexo初步配置"></a>Hexo初步配置</h1><h2 id="3-hexo主题"><a href="#3-hexo主题" class="headerlink" title="3-hexo主题"></a>3-hexo主题</h2><h2 id="主题配置文件：-config-yml"><a href="#主题配置文件：-config-yml" class="headerlink" title="主题配置文件： _config.yml "></a>主题配置文件： _config.yml </h2><h3 id="自定义首页"><a href="#自定义首页" class="headerlink" title="自定义首页"></a>自定义首页</h3><p>位置： /layout/indexs.md ；</p>
 <p>文章数统计/字数统计： </p>
 <blockquote>
-<p>加入含有 class=”article_number”的html标签可显示文章数量。<br>加入含有 class=”site_word_count”的html标签可显示站点总字数。</p>
+<p>加入含有 class=”article_number”的html标签可显示文章数量。</p>
+</blockquote>
+<blockquote>
+<p>加入含有 class=”site_word_count”的html标签可显示站点总字数。</p>
 </blockquote>
 <p>流量统计： </p>
 <blockquote>
-<p>加入含有 class=”site_uv”的html标签可显示站点访问人次。<br>加入含有 class=”site_pv”的html标签可显示站点访问量。</p>
+<p>加入含有 class=”site_uv”的html标签可显示站点访问人次。</p>
+</blockquote>
+<blockquote>
+<p>加入含有 class=”site_pv”的html标签可显示站点访问量。</p>
 </blockquote>
 <hr>
 <h3 id="快捷键说明："><a href="#快捷键说明：" class="headerlink" title="快捷键说明："></a>快捷键说明：</h3><p>快捷键为vim风格的。按键可能与vimium（chrome插件）的快捷键有冲突，插件设置屏蔽掉此站的快捷键即可。</p>
@@ -324,8 +322,7 @@
 <p>  github: </p>
 <p>  reddit: </p>
 <p>  weibo: </p>
-<h3 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面"></a>关于页面</h3><p>在 hexo 根目录执行，创建关于页面</p>
-<p>‘hexo new page “about” ‘</p>
+<h3 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面"></a>关于页面</h3><p>在 hexo 根目录执行，创建关于页面<br>hexo new page “about” </p>
 <p>位置： source/aoubt/index.md ，根据需要进行编辑。</p>
 <blockquote>
 <p>第一阶段</p>
@@ -341,10 +338,6 @@
 <h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
 
         </article>
-        
-        <p>
-            <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
         
         
     <div id="comments"></div>
@@ -387,24 +380,6 @@
 </div>
 <div class="acParent"></div>
 
-<div class="hide_box" onclick="dashangToggle()"></div>
-<div class="shang_box">
-    <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
-    <div class="shang_tit">
-        <p>喜欢就点赞,疼爱就打赏</p>
-    </div>
-    <div class="shang_payimg">
-        <div class="pay_img">
-            <img src="/blog/img/alipay.jpg" class="alipay" title="扫码支持">
-            <img src="/blog/img/weixin.jpg" class="weixin" title="扫码支持">
-        </div>
-    </div>
-    <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
-    </div>
-</div>
-
-
 </body>
 <script src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 
@@ -426,14 +401,6 @@
         
 
         /*渲染打赏样式*/
-        
-        $("input[name=pay]").on("click", function () {
-            if($("input[name=pay]:checked").val()=="weixin"){
-                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
-            } else {
-                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
-            }
-        })
         
 
         /*高亮代码块行号*/
@@ -465,11 +432,6 @@
     }
 
     /*打赏页面隐藏与展示*/
-    
-    function dashangToggle() {
-        $(".shang_box").fadeToggle();
-        $(".hide_box").fadeToggle();
-    }
     
 
 </script>
