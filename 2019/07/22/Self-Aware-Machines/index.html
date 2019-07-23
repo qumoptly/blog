@@ -253,11 +253,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color3">光学</a>
+        <a href="javascript:" class="color3">算法</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color3">算法</a>
+        <a href="javascript:" class="color3">光学</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -278,20 +278,20 @@
     
     <nav id="title-list-nav">
         
+        <a  class=""
+           href="/blog/2019/07/16/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-07-16 16:38:20">2019/07/16</span>
+        </a>
+        
         <a  class="关注 "
            href="/blog/2019/07/22/Self-Aware-Machines/"
            data-tag="机器人"
            data-author="" >
             <span class="post-title" title="Self-Aware-Machines">Self-Aware-Machines</span>
             <span class="post-date" title="2019-07-22 15:19:09">2019/07/22</span>
-        </a>
-        
-        <a  class="关注 "
-           href="/blog/2019/07/18/关于格拉斯哥/"
-           data-tag="量子,光学"
-           data-author="" >
-            <span class="post-title" title="关于格拉斯哥">关于格拉斯哥</span>
-            <span class="post-date" title="2019-07-18 21:46:32">2019/07/18</span>
         </a>
         
         <a  class="教程 "
@@ -302,20 +302,12 @@
             <span class="post-date" title="2019-07-16 21:35:37">2019/07/16</span>
         </a>
         
-        <a  class=""
-           href="/blog/2019/07/16/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-07-16 16:38:20">2019/07/16</span>
-        </a>
-        
         <a  class="关注 "
-           href="/blog/2019/07/18/关于马克斯普朗克量子光学研究所/"
+           href="/blog/2019/07/18/关于格拉斯哥/"
            data-tag="量子,光学"
            data-author="" >
-            <span class="post-title" title="关于马克斯普朗克量子光学研究所">关于马克斯普朗克量子光学研究所</span>
-            <span class="post-date" title="2019-07-18 21:17:07">2019/07/18</span>
+            <span class="post-title" title="关于格拉斯哥">关于格拉斯哥</span>
+            <span class="post-date" title="2019-07-18 21:46:32">2019/07/18</span>
         </a>
         
         <a  class="光学 "
@@ -324,6 +316,14 @@
            data-author="" >
             <span class="post-title" title="翻译整理计划">翻译整理计划</span>
             <span class="post-date" title="2019-07-15 22:40:59">2019/07/15</span>
+        </a>
+        
+        <a  class="关注 "
+           href="/blog/2019/07/18/关于马克斯普朗克量子光学研究所/"
+           data-tag="量子,光学"
+           data-author="" >
+            <span class="post-title" title="关于马克斯普朗克量子光学研究所">关于马克斯普朗克量子光学研究所</span>
+            <span class="post-date" title="2019-07-18 21:17:07">2019/07/18</span>
         </a>
         
         <a  class="教程 "
@@ -378,7 +378,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-07-23 09:56:21'>2019-07-22 15:19</time>
+        创建时间:<time class="date" title='更新时间: 2019-07-23 09:59:07'>2019-07-22 15:19</time>
         
     </div>
     <div class="article-meta">
@@ -423,7 +423,7 @@ img { max-width: 85%; height: auto; width: auto; width: auto; }
 </style>  
 
 <hr>
-<p>&nbsp;&nbsp;在这项研究中，Lipson和他的博士生Robert Kwiatkowski使用了一个四自由度的铰接式机器人手臂。<br>最初，机器人随机移动并收集大约一千个轨迹，每个轨迹包括一百个点。然后机器人使用深度学习，来创建一个自我模型。<br>&nbsp;&nbsp;第一个自我模型非常不准确，机器人不知道它是什么，或者它的关节是如何连接的。<br>但经过不到35小时的训练，自我模型与物理机器人一致，大约在4厘米左右。<br>自我模型在闭环系统中执行拾取和放置任务，使得机器人能够完全基于内部自我模型在轨迹的每个步骤之间重新校准其原始位置。<br>通过闭环控制，机器人能够抓住地面上特定位置的物体，并将其放入容器中，成功率达到100% 。<br>&nbsp;&nbsp;即使在完全基于内部自我模型、没有任何外部反馈的开环系统中，机器人也能以44% 的成功率完成挑选和放置任务。<br><br><br><img src="https://engineering.columbia.edu/files/seas/styles/816x460/public/content/cs_image/2019/05/lipson-robot3-1600.jpg?itok=eakq78a7" alt><br><br>霍德 · 利普森 :<br>【如果我们想让机器人变得独立，能够迅速适应它们的创造者无法预料的情况，那么它们就必须学会模拟自己】<br><br><br>&nbsp;&nbsp;自我建模的机器人也用于其他任务，如写文本使用标记。<br>为了测试自身模型是否能够检测到自身的损伤，研究人员3d 打印了一个变形的部分来模拟损伤，机器人能够检测到这种变化并重新训练自身模型。<br>这种新的自我模型使机器人能够在几乎没有性能损失的情况下继续挑选和放置任务。<br>&nbsp;&nbsp;利普森指出，自我成像是使机器人摆脱所谓的“狭隘人工智能”限制，获得更普遍能力的关键。<br>“这可能就是一个新生儿在婴儿床里做的事情，因为它知道婴儿是什么样的，”他说。 “我们推测，这一优势可能也是人类自我意识的进化起源。<br>尽管与人类相比，我们的机器人想象自己的能力还很粗糙，但我们相信，这种能力正在通往机器自我意识的道路上。”<br>&nbsp;&nbsp;利普森认为，机器人技术和人工智能可能为解开古老的意识之谜提供了一扇新的窗口。<br>“哲学家、心理学家和认知科学家已经对自然的自我意识思考了几千年，但是进展相对较小，”他观察到。<br>“我们仍然用诸如‘现实的画布’这样的主观术语来掩饰我们的不理解，但机器人现在迫使我们将这些模糊的概念转化为具体的算法和机制。”<br><br>  </p>
+<p>&nbsp;&nbsp;在这项研究中，Lipson和他的博士生Robert Kwiatkowski使用了一个四自由度的铰接式机器人手臂。 最初，机器人随机移动并收集大约一千个轨迹，每个轨迹包括一百个点。然后机器人使用深度学习，来创建一个自我模型。<br>&nbsp;&nbsp;第一个自我模型非常不准确，机器人不知道它是什么，或者它的关节是如何连接的。 但经过不到35小时的训练，自我模型与物理机器人一致，大约在4厘米左右。 自我模型在闭环系统中执行拾取和放置任务，使得机器人能够完全基于内部自我模型在轨迹的每个步骤之间重新校准其原始位置。 通过闭环控制，机器人能够抓住地面上特定位置的物体，并将其放入容器中，成功率达到100% 。<br>&nbsp;&nbsp;即使在完全基于内部自我模型、没有任何外部反馈的开环系统中，机器人也能以44% 的成功率完成挑选和放置任务。<br><br><br><img src="https://engineering.columbia.edu/files/seas/styles/816x460/public/content/cs_image/2019/05/lipson-robot3-1600.jpg?itok=eakq78a7" alt><br><br>霍德 · 利普森 :<br>【如果我们想让机器人变得独立，能够迅速适应它们的创造者无法预料的情况，那么它们就必须学会模拟自己】<br><br><br>&nbsp;&nbsp;自我建模的机器人也用于其他任务，如写文本使用标记。 为了测试自身模型是否能够检测到自身的损伤，研究人员3d 打印了一个变形的部分来模拟损伤，机器人能够检测到这种变化并重新训练自身模型。 这种新的自我模型使机器人能够在几乎没有性能损失的情况下继续挑选和放置任务。<br>&nbsp;&nbsp;利普森指出，自我成像是使机器人摆脱所谓的“狭隘人工智能”限制，获得更普遍能力的关键。 “这可能就是一个新生儿在婴儿床里做的事情，因为它知道婴儿是什么样的，”他说。 “我们推测，这一优势可能也是人类自我意识的进化起源。 尽管与人类相比，我们的机器人想象自己的能力还很粗糙，但我们相信，这种能力正在通往机器自我意识的道路上。”<br>&nbsp;&nbsp;利普森认为，机器人技术和人工智能可能为解开古老的意识之谜提供了一扇新的窗口。 “哲学家、心理学家和认知科学家已经对自然的自我意识思考了几千年，但是进展相对较小，”他观察到。“我们仍然用诸如‘现实的画布’这样的主观术语来掩饰我们的不理解，但机器人现在迫使我们将这些模糊的概念转化为具体的算法和机制。”<br><br>  </p>
 <h2 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h2><p>Paper: <a href="http://robotics.sciencemag.org/lookup/doi/10.1126/scirobotics.aau9354" target="_blank" rel="noopener">地址</a><br>DOI: 10.1126/scirobotics.aau9354  <br> </p>
 <p>Video: </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">https://youtu.be/4dp_iiESLo8</span><br><span class="line">http://robotics.sciencemag.org/</span><br><span class="line">http://engineering.columbia.edu/</span><br><span class="line">http://me.columbia.edu/hod-lipson</span><br><span class="line">https://engineering.columbia.edu/departments/mechanical-engineering</span><br><span class="line">http://www.creativemachineslab.com/</span><br><span class="line">https://datascience.columbia.edu/</span><br></pre></td></tr></table></figure>
@@ -444,7 +444,7 @@ img { max-width: 85%; height: auto; width: auto; width: auto; }
     <p><span class="copy-title">文章标题:</span>Self-Aware-Machines</p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="qumoptly">qumoptly</a></p>
     <p><span class="copy-title">发布时间:</span>2019-07-22, 15:19:09</p>
-    <p><span class="copy-title">最后更新:</span>2019-07-23, 09:56:21</p>
+    <p><span class="copy-title">最后更新:</span>2019-07-23, 09:59:07</p>
     <p>
     <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -505,7 +505,7 @@ img { max-width: 85%; height: auto; width: auto; width: auto; }
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#机器人','#量子','#光学','#算法','#激光','#hexo','#宇宙，黑洞，量子',],
+            'data': ['#机器人','#量子','#算法','#光学','#激光','#hexo','#宇宙，黑洞，量子',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
